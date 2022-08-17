@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100vh;
+}
+.aside-chat {
+  background-color: #f5f7fb;
+}
+.chat-window {
+  grid-template-rows: 10% 80% 10%;
+  background-color: white;
+}
+/* chat header css */
+.chat-header {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-bottom: 1px solid lightgray;
+  gap: 1rem;
+  padding: 1rem;
+}
+.chat-header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.chat-header > div:nth-child(2) {
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+/* messages components */
+
+.messages {
+  padding: 1rem;
+}
+
+.received {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.msg-body {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  text-align: left;
+  background-color: #f5f7fb;
+  width: fit-content;
+  max-width: 50%;
+}
+.msg-body > p {
+  color: #b5b5b5;
+  text-align: right;
+  font-size: 0.75rem;
+}
+.msg-sender {
+  display: inline;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+.msg-sender > span {
+  position: relative;
+  left: -2rem;
+  top: -1rem;
+}
+/* sent msg  */
+.sent {
+  display: flex;
+  justify-content: flex-end;
+}
+/* sent msg  */
+.footer{
+  height: 10%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  background-color: rgb(198, 203, 203);
+  align-items: center;
+}
+.footer > input[type="text"]{
+  margin: 15px;
+  padding: 10px;
+  height: 40px;
+  width: 90%;
+  border-radius: 10px;
+}
+.IoMdSend{
+  display: flex;
+  gap: 15px;
+}
+
+
+
+
+
+/* Aside chat online friends */
+.Aside-head {
+  display: grid;
+  grid-template-rows:10% 10% 80% ;
+  margin: 0;
+  padding: 0;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+.logo {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  padding: 20px;
+  align-items: center;
+  height: 72px;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+.search-Bar {
+  padding: 20px;
+}
+ .search-Bar> input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+.Recent-user {
+  display: flex;
+  align-items: center;
+  padding:20px ;
+  font-size: 20px;
+  background-color: white;
+  font-weight: bolder;
+  border-bottom: 1px solid lightgray;
+}
+div > img {
+  height: 50px;
+  width: 50px;
+  margin-left: 0;
+  border-radius: 25px;
+}
+div > span {
+  padding: 10px;
+  font-weight: bolder;
+}
+.Recent-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.Recent-hover :hover {
+  background-color: #beb9b9;
+  transition: 0.5s;
+}
+.user-name {
+  padding-left: 30px;
+  font-weight: bolder;
+}
+.input-send{
+  display: flex;
+}
+
